@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>官方配件 - Smartisan</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goodsList.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<style type="text/css">
+		.top{
+		    height: 620px;
+		    background-size: auto 100%;
+		    background-position: 50%;
+		    background-repeat: no-repeat;
+		    background-image: url(http://static.smartisanos.cn/service/assets/images/top.5dc20d0b797aa46fec1a159a016751c7.jpg);
+		    background-color: #131313;
+		    position: relative;
+		    top: -90px;
+		    margin-bottom: -90px;
+		}
+		.content {
+		    clear: both;
+		    width: 1220px;
+		    min-height: 600px;
+		    padding: 0 0 25px;
+		    margin: 0 auto;
+		}
+		.content .box {
+		    overflow: hidden;
+		    z-index: 0;
+		    margin-top: 29px;
+		    border: 1px solid rgba(0,0,0,.14);
+		    border-radius: 8px;
+		    background: #fff;
+		    box-shadow: 0 3px 8px -6px rgba(0,0,0,.1);
+		}
+		.content .box .title-header {
+		    display: block;
+		    font-size: 18px;
+		    line-height: 60px;
+		    color: #9f9f9f;
+		    background: #fafafa;
+		    border-bottom: 1px solid rgba(0,0,0,.1);
+		}
+		.title-header .title{
+			margin-left: 30px;
+		}
+		.content .box .panel-content {
+		    transition: all .3s ease-in-out;
+		}
+		.box-official .banner-list > li.wechat {
+
+		    background-image: url(http://static.smartisanos.cn/service/assets/images/contact-weixin.b59a829fd5f92fb0c7f99b6fac4337fc.png);
+		}
+		.box-official .banner-list > li.weibo {
+		    background-image: url(http://static.smartisanos.cn/service/assets/images/contact-weibo.c74aa193d498f842566db34a76d71dab.png);
+		}
+		.box-official .banner-list > li.online {
+		    background-image: url(http://static.smartisanos.cn/service/assets/images/contact-online.4ed58ce4085d52a86e8b3e59f61a4a8c.png);
+		}
+		.box-official .banner-list > li.time {
+		    background-image: url(http://static.smartisanos.cn/service/assets/images/contact-online.4ed58ce4085d52a86e8b3e59f61a4a8c.png);
+
+		}
+		.box-official .banner-list > li.jingdong {
+		    background-image: url(http://static.smartisanos.cn/service/assets/images/contact-jd.f4d73a60ff35564bfbe005e4c3f90c40.png);
+		}
+		.box-official .banner-list > li.tianmao {
+		    background-image: url(http://static.smartisanos.cn/service/assets/images/contact-tmall.d7b78b81cef8607acc15a3f5a95812d5.png);
+		}
+		.box-official .banner-list > li {
+		    position: relative;
+		    width: 20%;
+		    text-align: center;
+		    padding: 160px 0 70px;
+		    border-bottom: 0;
+		    cursor: pointer;
+		    background-repeat: no-repeat;
+		    background-size: 60px auto;
+		    background-position: center 75px;
+		}
+		.box .banner-list > li {
+		    float: left;
+		    box-sizing: border-box;
+		    border-right: 1px solid #ececec;
+		    border-bottom: 1px solid #ececec;
+		}
+		.box-official .banner-list > li .title {
+		    font-size: 16px;
+		    line-height: 1em;
+		    color: #333;
+		    margin-bottom: 12px;
+		}
+		.box-official .banner-list > li .time {
+		    font-size: 12px;
+		    line-height: 1em;
+		    color: #999;
+		}
+
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="nav-global">
+				<div class="container">
+					<h1 class="nav-logo">
+						<a href="javascript:;"></a>
+					</h1>
+					<ul class="nav-aside">
+						<li class="nav-user">
+							<a href="javascript:;">个人中心</a>
+							<!--active-->
+							<div class="nav-user-wrapper">
+								<div class="nav-user-list">
+									<dl class="nav-user-avatar">
+										<dd><span class="ng-scope"></span></dd>
+										<dt class="ng-binding">+86 138****9453</dt>
+									</dl>
+									<ul>
+										<li class="order"><a href="javascript:;">我的订单</a></li>
+										<li class="support"><a href="javascript:;">售后服务</a></li>
+										<li class="coupon"><a href="javascript:;">我的优惠</a></li>
+										<li class="information"><a href="javascript:;">账户资料</a></li>
+										<li class="address"><a href="javascript:;">收货地址</a></li>
+										<li class="logout"><a href="javascript:;">退出</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!--active-->
+						<li class="nav-cart">
+							<a href="javascript:;">购物车</a>
+							<!--根据class改变颜色-->
+							<span class="cart-empty-num cart-num">
+								<i>0</i>
+							</span>
+							<div class="nav-cart-wrapper">
+								<div class="nav-cart-list">
+									<div class="empty">
+										<h3>购物车为空</h3>
+										<p>您还没有选购任何商品，现在前往商城选购吧!</p>
+									</div>
+									<div class="full">
+										<div class="nav-cart-items">
+											<ul>
+												<li class="clear">
+													<div class="cart-item js-cart-item cart-item-sell">
+														<div class="cart-item-inner">
+															<div class="item-thumb">
+																<img src="./img/goods/1.png">
+															</div>
+															<div class="item-desc">
+																<div class="cart-cell">
+																	<h4> 
+																		<a href="#/item/100027401">坚果 Pro 钢化玻璃保护膜（前屏用）</a>
+																	</h4>
+																	<p class="attrs">
+																		<span>透明</span>
+																	</p>
+																	<h6>
+																		<span class="price-icon">¥</span><span class="price-num">49</span><span class="item-num">x 1</span>
+																	</h6>
+																</div>
+															</div>
+															<div class="del-btn">删除</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="nav-cart-total">
+											<p>共 <strong class="ng-binding">1</strong> 件商品</p>
+											<h5>合计：<span class="price-icon">¥</span><span class="price-num ng-binding" ng-bind="cartMenu.totalPrice">49</span></h5>
+											<h6>
+												<a ng-href="http://www.smartisan.com/shop/#/cart" class="nav-cart-btn" href="http://www.smartisan.com/shop/#/cart">去购物车</a>
+											</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="nav-list">
+						<li><a href="javascript:;">在线商城</a></li>
+						<li><a href="javascript:;">坚果 Pro</a></li>
+						<li><a href="javascript:;">Smartisan M1 / M1L</a></li>
+						<li><a href="javascript:;">Smartisan OS</a></li>
+						<li><a href="javascript:;">欢喜云</a></li>
+						<li><a href="javascript:;">应用下载</a></li>
+						<li><a href="javascript:;">官方论坛</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="nav-sub ">
+				<div class="nav-sub-wrapper">
+					<div class="container">
+						<ul class="nav-list">
+							<li><a href="index_one.html">首页</a></li>
+							<li><a href="index_two.html">手机</a></li>
+							<li><a href="index_three.html">“足迹系列”手感膜</a></li>
+							<li class="active"><a href="index_one.html">官方配件</a></li>
+							<li><a href="index_six.html">周边产品</a></li>
+							<li><a href="index_five.html">了解详细</a></li>
+							<!--<li><a href="javascript:;">全部商品</a></li>-->
+							<li><a href="index_four.html">服务</a></li>
+						</ul>
+					</div>
+				</div>			
+			</div>
+		</div>
+				
+		<div id="main">
+			<div class="top"></div>		
+			<div class="content">
+					<div class="box box-official">
+						<header  class="title-header"> 
+							<h5  class="title">联系客服</h5> 
+						</header>
+				
+					<div  class="panel-content">
+						<ul  class="banner-list clearfix">
+							<li  class="wechat ">
+								<h3  class="title">微信客服</h3>
+								<p  class="time">9:00 - 21:00</p>
+							</li>
+							<li  class="weibo">
+								<h3  class="title">微博客服</h3>
+								<p  class="time">9:00 - 24:00</p>
+								<a  href="#" target="_blank"></a>
+							</li>
+							<li  class="online">
+								<h3  class="title">在线客服</h3>
+								<p  class="time">9:00 - 18:00</p>
+								<a  href="#" target="_self"></a>
+							</li>
+							<li  class="jingdong">
+								<h3  class="title">京东客服</h3>
+								<p  class="time">9:00 - 24:00</p>
+								<a  href="#" target="_blank"></a>
+							</li>
+							<li  class="tianmao">
+								<h3  class="title">天猫客服</h3>
+								<p  class="time">9:00 - 24:00</p>
+								<a  href="#" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>		
+			</div>
+
+			
+		</div>
+		
+		<div id="footer">
+			<div class="footer">
+				<div class="container">
+					<div class="siteinfo">
+						<ul class="nav-footer">
+							<li class='first_li'>
+								<h3 >订单服务 </h3>
+								<ul >
+									<!---->
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/instruction">购买指南</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/payment">支付方式</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/delivery">送货政策</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class='first_li'>
+								<h3 >服务支持 </h3>
+
+								<ul >
+									<!---->
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/instruction">售后服务</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/payment">维修门店</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/delivery">零售门店</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class='first_li'>
+								<h3 >自助服务  </h3>
+								<ul >
+									<!---->
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/instruction">热点咨询</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/payment">预约购买</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/delivery">订单物流</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class='first_li'>
+								<h3 >媒体中心  </h3>
+								<ul >
+									<!---->
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/instruction">新闻动态</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/payment">官方视频</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/delivery">图片资源</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class='first_li'>
+								<h3 >关于公司  </h3>
+								<ul >
+									<!---->
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/instruction">公司简介</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/payment">加入我们</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/delivery">联系我们</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class='first_li'>
+								<h3 >关注我们  </h3>
+								<ul >
+									<!---->
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/instruction">新浪微博</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/payment">官方微信</a>
+									</li>
+									<li class='last_li'>
+										<a _ href="//www.smartisan.com/support/#/delivery">官方贴吧</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						
+						<ul class="service">
+							<li class="tel">400-626-5666</li>
+							<li class="time">周一至周日 9:00-18:00（仅收市话费）</li>
+							<li class="online">
+								<a href="//www.smartisan.com/support/#/self-service"><span class="smartisan-icon info-question"></span>在线帮助</a>
+							</li>
+						</ul>
+					</div>
+					<div class="copyright">
+						<h4 >Copyright ©, Smartisan Digital Co., Ltd. All Rights Reserved.</h4>
+						<h5 class="company">北京锤子数码科技有限公司</h5>
+						<ul   class="privacy">
+							<li  >
+								<a   href="//www.smartisan.com/support/#/agreement">法律声明</a>
+							</li>
+							<li  >
+								<a   href="//www.smartisan.com/support/#/privacy">隐私条款</a>
+							</li>
+							<li   class="devstore">
+								<a   href="http://dev.smartisan.com/">开发者中心</a>
+							</li>
+						</ul>
+						<h6  > 
+							<a   href="http://www.miibeian.gov.cn/" target="_blank">
+								<span  >京ICP备14041720号-1</span>
+								<span  >京ICP证140622号</span>
+								<span  >京公网安备11010502025474</span>
+							</a> 
+						</h6>
+					</div>
+				</div>				
+			</div>
+
+		</div>
+	</body>
+</html>
